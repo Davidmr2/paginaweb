@@ -1,0 +1,215 @@
+/* Estilo base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #2C6B38;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Sección de Bienvenida */
+#home {
+    text-align: center;
+    padding: 20px;
+    min-height: 180px;
+    border: 2px solid #2C6B38;
+    border-radius: 10px;
+    background-color: #e5f7e1;
+    margin: 20px auto;
+    width: 50%;
+}
+
+#home h1 {
+    font-size: 2.8em;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #2C6B38;
+    margin: 0;
+}
+
+#home p {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #555;
+    font-weight: normal;
+}
+
+/* Imagen central */
+#home img {
+    max-width: 280px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Sección de Sobre Nosotros */
+#sobre-nosotros {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: #e5f7e1;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+/* Sección Productos */
+#productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.producto-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.producto-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Sección de Clientes Satisfechos */
+#clientes {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2C6B38;
+}
+
+/* Sección de Contacto */
+#contacto-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2C6B38;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    background-color: #2C6B38;
+    color: white;
+    padding: 10px;
+    display: none;
+}
+
+/* Media Queries para hacer la página responsiva */
+
+/* Para pantallas más pequeñas, como móviles */
+@media screen and (max-width: 768px) {
+    /* Sección de bienvenida más pequeña */
+    #home {
+        width: 80%; /* Hacemos la sección más pequeña */
+        padding: 15px;
+    }
+
+    #home h1 {
+        font-size: 2em; /* Reducción del tamaño del título */
+    }
+
+    #home p {
+        font-size: 1em; /* Reducción del tamaño del texto */
+    }
+
+    /* Imagen central ajustada */
+    #home img {
+        max-width: 250px; /* Hacemos la imagen un poco más pequeña */
+    }
+
+    /* Menú de navegación en forma de lista vertical */
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+    }
+
+    /* Sección de productos en columna */
+    #productos {
+        display: block;
+        text-align: center;
+    }
+
+    .producto-item {
+        width: 90%; /* Hacemos los productos más pequeños y en una columna */
+        margin: 10px auto;
+    }
+
+    /* Botón de contacto flotante */
+    #contacto-flotante {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+/* Para pantallas más pequeñas (como celulares muy pequeños) */
+@media screen and (max-width: 480px) {
+    #home {
+        width: 90%; /* Hacemos la sección aún más pequeña */
+    }
+
+    #home h1 {
+        font-size: 1.8em; /* Hacemos la fuente más pequeña */
+    }
+
+    #home p {
+        font-size: 0.9em; /* Ajuste de texto */
+    }
+
+    #productos {
+        display: block; /* Hacemos los productos en una sola columna */
+    }
+
+    .producto-item {
+        width: 100%; /* Productos a 100% de la pantalla */
+    }
+
+    /* Botón de contacto flotante más pequeño */
+    #contacto-flotante {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
